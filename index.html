@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>udemy clone</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .img img {
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!---------------- this is a navbar ---------- -->
+    <div class="header">
+      <div class="navbar flex justify-between items-center p-2 px-3">
+        <!-- toggle menu --------->
+        <div class="menu">
+          <a href="" 
+            ><ion-icon name="menu-outline" class="text-2xl" onclick="open()"></ion-icon
+          ></a>
+        </div>
+        <!-- logo --------->
+        <div class="logo">
+          <img src="img/logo-udemy.svg" class="w-24 text-center pl-5" alt="" />
+        </div>
+        <!-- icon --- -->
+        <div class="icon">
+          <a href=""
+            ><ion-icon name="search-outline" class="text-2xl"></ion-icon
+          ></a>
+          <a href=""
+            ><ion-icon name="cart-outline" class="text-2xl pl-4"></ion-icon
+          ></a>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <!-- headre end  -->
+
+    <!-- backround images ---->
+    <div class="img">
+      <img src="img/screen-11.webp" class="w-full h-auto lg:hidden" alt="" />
+    </div>
+    <!--------- main content-------- -->
+    <div class="content p-5">
+      <div class="heading text-center lg:text-left">
+        <h1 class="text-4xl text-black font-bold pt-4 tracking-wide lg:text-3xl">
+          Learn in-demand professional skills
+        </h1>
+        <p class="pt-3">
+          Choose from courses in English and many other languages
+        </p>
+      </div>
+    </div>
+      <!-- box images  -->
+    <div class="content lg:flex lg:justify-evenly lg:items-center">
+      <div class="image">
+        <div class="box p-5">
+          <img src="img/css.jpeg" class="h-36 w-full object-cover lg:w-96" alt="" />
+          <h1 class="text-xl font-bold pt-4">
+            Build Responsive Real-World Websites with HTML and CSS
+          </h1>
+          <p class="pt-3 text-sm">
+            Learn modern HTML5, CSS3 and web design by building a stunning
+            website for your portfolio! Includes flexbox and CSS Grid
+          </p>
+             <div class="writer">
+            <p class="text-sm pt-1">
+              Created by<span class="text-blue-600 pl-2">Jonas Schmedtmann</span>
+            </p>
+          <div class="start pt-1">
+            <a href=""
+              >4.7<ion-icon
+                name="star-outline"
+                class="text-yellow-700 pl-2"
+              ></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon name="star-outline" class="text-yellow-700"></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon name="star-outline" class="text-yellow-700"></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon name="star-outline" class="text-yellow-700"></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon
+                name="star-half-outline"
+                class="text-yellow-700"
+              ></ion-icon
+            ></a>
+          </div>
+          <p class="text-xl font-bold pt-1">₹3,499</p>
+        </div>
+      </div>
+      <!-- second images -->
+      <div class="image">
+        <div class="box p-5">
+          <img src="img/java.jpg" class="h-36 w-full object-cover lg:w-96" alt="" />
+          <h1 class="text-xl font-bold pt-4">
+            JavaScript - The Complete Guide 2023 (Beginner + Advanced)
+          </h1>
+          <p class="pt-3 text-sm">
+            Modern JavaScript from the beginning - all the way up to JS expert
+            level! THE must-have JavaScript resource in 2023.
+          </p>
+          <div class="writer">
+            <p class="text-sm pt-1">
+              Created by<span class="text-blue-600 pl-2">Academind by Maximilian Schwarzmüller</span>
+            </p>
+          </div>
+          <div class="start pt-1">
+            <a href=""
+              >4.7<ion-icon
+                name="star-outline"
+                class="text-yellow-700 pl-2"
+              ></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon name="star-outline" class="text-yellow-700"></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon name="star-outline" class="text-yellow-700"></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon name="star-outline" class="text-yellow-700"></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon
+                name="star-half-outline"
+                class="text-yellow-700"
+              ></ion-icon
+            ></a>
+          </div>
+          <p class="text-xl font-bold pt-1">₹1,599</p>
+        </div>
+      </div>
+   
+      <div class="image">
+        <div class="box p-5">
+          <img src="img/python.jpg" class="h-36 w-full object-cover lg:w-96" alt="" />
+          <h1 class="text-xl font-bold pt-4">
+            The Complete Python Bootcamp From Zero to Hero in Python
+          </h1>
+          <p class="pt-3 text-sm">
+            Learn Python like a Professional Start from the basics and go all
+            the way to creating your own applications and games
+          </p>
+          <div class="writer">
+            <p class="text-sm pt-1">
+              Created by<span class="text-blue-600 pl-2">Jose Portilla</span>
+            </p>
+          </div>
+          <div class="start pt-1">
+            <a href=""
+              >4.7<ion-icon
+                name="star-outline"
+                class="text-yellow-700 pl-2"
+              ></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon name="star-outline" class="text-yellow-700"></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon name="star-outline" class="text-yellow-700"></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon name="star-outline" class="text-yellow-700"></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon
+                name="star-half-outline"
+                class="text-yellow-700"
+              ></ion-icon
+            ></a>
+          </div>
+          <p class="text-xl font-bold pt-1">₹2,499</p>
+        </div>
+      </div>
+
+       <!-- third images  -->
+      <div class="image">
+        <div class="box p-5">
+          <img src="img/reax=ct.png" class="h-36 w-full object-cover lg:w-96" alt="" />
+          <h1 class="text-xl font-bold pt-4">React - The Complete Guide (incl Hooks, React Router, Redux)
+          </h1>
+          <p class="pt-3 text-sm">
+          Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!
+          </p>
+          <div class="writer">
+            <p class="text-sm pt-1">
+              Created by<span class="text-blue-600 pl-2">Academind by Maximilian Schwarzmüller</span>
+            </p>
+          </div>
+          <div class="start pt-1">
+            <a href=""
+              >4.7<ion-icon
+                name="star-outline"
+                class="text-yellow-700 pl-2"
+              ></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon name="star-outline" class="text-yellow-700"></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon name="star-outline" class="text-yellow-700"></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon name="star-outline" class="text-yellow-700"></ion-icon
+            ></a>
+            <a href=""
+              ><ion-icon
+                name="star-half-outline"
+                class="text-yellow-700"
+              ></ion-icon
+            ></a>
+          </div>
+          <p class="text-xl font-bold pt-1">₹2,499</p>
+        </div>
+      </div>
+    </div>
+ </div>
+      <div class="trust p-5">
+        <h1 class="p-3 text-2xl font-bold text-center">Trusted by over 13,400 great teams</h1>
+        <p class="pt-1">Leading companies use the same courses to help employees keep their skills fresh.</p>
+         <div class="company pt-5">
+        <img src="img/box-dark.svg" alt="" class="inline-block">
+        <img src="img/eventbrite-dark.svg" alt="" class="inline-block">
+        <img src="img/tcs-dark.svg" alt="" class="inline-block">
+        <img src="img/nasdaq-dark.svg" alt="" class="inline-block">
+        <img src="img/netapp-dark.svg" alt="" class="inline-block">
+        <img src="img/volkswagen-dark.svg" alt="" class="inline-block">
+      </div>
+      </div>
+     
+    </section>
+
+    <section>
+      <div class="person text-center">
+         <div class="img p-5">
+           <img src="img/person.jpg" alt="">
+           <h1 class="p-3 text-2xl font-bold text-center">Become an instructor</h1>
+           <p  class="pt-1 text-center">Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</p>
+          <div class="btn pt-4">
+             <button class="text-sm bg-black text-white px-3 py-3 ">Start Teaching Today</button>
+          </div>
+         </div>
+      </div>
+    </section>
+
+    <section class="footer bg-black py-4 w-full">
+    <div class="footer-content p-5">
+      <div class="list-footer">
+      <li class="text-white text-xs list-none py-1">About us</li>
+      <li class="text-white text-xs list-none py-1">Contact us</li>
+      <li class="text-white text-xs list-none py-1">Carees</li>
+      <li class="text-white text-xs list-none py-1">Investors</li>
+      <li class="text-white text-xs list-none py-1">Terms</li>
+    </div>
+    <div class="logo pt-4">
+      <img src="img/logo-udemy-inverted.svg" class="w-16" alt="" /></div>
+        <p class="text-xs text-white pt-3">© 2023 Udemy, Inc.</p>
+    </div>
+    </section>
+    
+
+  
+  </body>
+</html>
